@@ -35,14 +35,13 @@ set :deploy_to, '/home/website/apps/website'
 # set :keep_releases, 5
 
 namespace :deploy do
-
-  after :restart, :clear_cache do
-    on roles(:web), in: :groups, limit: 3, wait: 10 do
-      # Here we can do anything such as:
-      within current_path do
-         execute :jekyll, 'build'
+  task :update_jekyll do
+    on roles(:app) do
+      within "#{deploy_to}/current" do
+        execute :bundle, "exec jekyll build"
       end
     end
   end
-
 end
+
+after "deploy:symlink:release", "deploy:update_jekyll"
