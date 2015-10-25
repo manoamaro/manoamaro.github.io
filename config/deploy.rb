@@ -34,11 +34,13 @@ set :deploy_to, '/home/website/apps/website'
 # Default value for keep_releases is 5
 # set :keep_releases, 5
 
+set :bundle_bins, fetch(:bundle_bins, []).push('jekyll')
+
 namespace :deploy do
   task :update_jekyll do
     on roles(:app) do
       within "#{deploy_to}/current" do
-        execute :bundle, "exec jekyll build"
+        execute :jekyll, "build"
       end
     end
   end
