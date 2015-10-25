@@ -9,11 +9,15 @@
     <link href="{{ site.url }}/stylesheets/github-light.css" rel="stylesheet">
     <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">
     <!--[if lt IE 9]> <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+    <meta name="description" content="{{ page.title }} - Manoel de Albuquerque Lira Amaro">
+    <meta name="keywords" content="{{ page.tags.join(',') }}">
+    <meta name="author" content="Manoel de Albuquerque Lira Amaro">
   </head>
   <body>
     <div class="wrapper">
       <header>
-        <h1>Manoel Amaro</h1>
+        <h1>Manoel A. L. Amaro</h1>
+        <small>Software Engineer, M.Sc in Computer Science</small>
         <p></p>
         <p class="view">
           <a href="/">Home</a>
@@ -23,6 +27,9 @@
         </p>
         <p class="view">
           <a href="https://github.com/manoamaro">GitHub Profile</a>
+        </p>
+        <p class="view">
+          <a href="https://500px.com/manoamaro">500px Profile</a>
         </p>
         <h3>Posts</h3>
         {% for post in site.posts %}

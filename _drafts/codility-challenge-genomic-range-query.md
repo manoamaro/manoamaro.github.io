@@ -2,6 +2,11 @@
 layout: post
 title: 'Codility Challenge: Genomic Range Query'
 published_at: 22/10/2015
+tags:
+  - codility
+  - challenge
+  - programming
+  - ruby
 ---
 
 This challenge is in the list of the toughest challenges for me. I wrote a code that got 100% on tests, but with a more detailed analysis, it's not the expected answer.
