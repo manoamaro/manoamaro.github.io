@@ -40,7 +40,7 @@ namespace :deploy do
   task :update_jekyll do
     on roles(:app) do
       within "#{deploy_to}/current" do
-        execute :jekyll, "build"
+        execute :bundle, "exec jekyll build"
       end
     end
   end
