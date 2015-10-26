@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Codility Challenge: Genomic Range Query'
+title: 'Rails and Angujar JS'
 published_at: 22/10/2015
 tags:
   - codility
@@ -9,7 +9,7 @@ tags:
   - ruby
 ---
 
-This challenge is in the list of the toughest challenges for me. I wrote a code that got 100% on tests, but with a more detailed analysis, I believe it's not the expected answer.
+This challenge is in the list of the toughest challenges for me. I wrote a code that got 100% on tests, but with a more detailed analysis, it's not the expected answer.
 
 {% highlight ruby %}
 def solution(s, p, q)
@@ -35,7 +35,7 @@ end
 
 You can check the results [here](https://codility.com/demo/results/trainingAZJBGW-NSR)
 
-In this solution, I didn't use what I think the lesson expected us to use (prefix sum technique). Besides calculating the complexity it will give us O(m*4*n). So, I started to try to find a solution using prefix sum, but I couldn't find anything by my own. So, I searched for the existing solutions, and after analyzing a lot of different ones, I came up with this implementation.
+In this solution, I didn't use what I think the lesson expected us to implement (prefix sum technique). So, I started to try to find a solution using prefix sum, but I couldn't find anything by my own. So, I searched for the existing solutions, and after analyzing a lot of different ones, I came up with this implementation.
 
 {% highlight ruby %}
 def solution(s, p, q)
