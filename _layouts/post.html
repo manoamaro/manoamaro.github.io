@@ -3,7 +3,7 @@ layout: main
 ---
 
 <h2>{{ page.title }}</h2>
-<small>{{ page.published_at }}</small>
-<small>{{ page.tags | array_to_sentence_string }}</small>
+<small>{{ page.date | date_to_long_string }}</small>
+<small class="pull-right">{{ page.tags | array_to_sentence_string }}</small>
 <hr />
 {{ content }}

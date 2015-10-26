@@ -30,10 +30,6 @@
           <br />
           <a href="https://500px.com/manoamaro">500px</a>
         </p>
-        <h3>Latest Posts <small>(<a href="/posts.html">See all</a>)</small></h3>
-        {% for post in site.posts limit:5 %}
-          <a href="{{ post.url }}">{{ post.title }}</a><br />
-        {% endfor %}
       </header>
       <section>
         {{ content }}

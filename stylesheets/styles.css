@@ -254,7 +254,20 @@ footer {
   }
 }
 
+.post-title {
+  display: block;
+  font-size: 18px;
+  color: #000;
+  font-weight: bold;
+}
 
+.excerpt {
+  color: #001;
+}
+
+.pull-right {
+  float: right;
+}
 
 .highlight  { background: #ffffff; }
 .highlight .c { color: #999988; font-style: italic } /* Comment */

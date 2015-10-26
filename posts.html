@@ -1,0 +1,14 @@
+---
+layout: main_without_posts
+title: Posts
+---
+
+<h1>Posts</h1>
+{% for post in site.posts %}
+  <div>
+    <a href="{{ post.url }}" class="post-title">{{ post.title }}</a>
+    <small>{{ post.date | date_to_long_string }}</small>
+    <small class="pull-right">{{ post.tags | array_to_sentence_string }}</small>
+    <small class="excerpt">{{ post.excerpt }}</small>
+  </div>
+{% endfor %}
