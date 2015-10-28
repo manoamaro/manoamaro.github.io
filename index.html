@@ -37,16 +37,12 @@ title: Home
 </h3>
 
 <ul>
-  <li>
-    <p>
-      Technologist Internet Systems · 2008 - 2011<br />
-      <a href="http://www.ifpb.edu.br/campi/joao-pessoa/cursos/cursos-superiores-de-tecnologia/sistemas-para-internet">Instituto Federal de Edu. Ciências e Tecnologia da Paraíba</a> (Paraíba, Brazil)
-    </p>
-  </li>
-  <li>
-    <p>
-      M.sc. Computer Science · 2011 - 2013<br />
-      <a href="http://www.ppgi.di.ufpb.br/">Universidade Federal da Paraíba</a> (Paraíba, Brazil)
-    </p>
-  </li>
+  {% for edu in site.data.education %}
+    <li>
+      <p>
+        {{ edu.title }} · {{ edu.from }} - {{ edu.to }}<br />
+        <a href="{{ edu.school_site }}">{{ edu.school }}</a> ({{ edu.location }})
+      </p>
+    </li>
+  {% endfor %}
 </ul>
