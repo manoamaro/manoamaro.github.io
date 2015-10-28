@@ -20,18 +20,14 @@ title: Home
 </h3>
 
 <ul>
-  <li>
-    <p>
-      Software Engineer at <a href="http://www.phoebus.com.br/">Phoebus Tecnologia</a> · 2013 - Present<br />
-      <code>Java, Spring, Flex, WMLS, Oracle Database</code>
-    </p>
-  </li>
-  <li>
-    <p>
-      Software Developer at Inovecinco · 2011 - 2013<br />
-      <code>Java, Ruby on Rails, PostgreSQL, JavaScript, CSS, HTML</code>
-    </p>
-  </li>
+  {% for job in site.data.jobs %}
+    <li>
+      <p>
+        {{ job.title }} at <a href="{{ job.company_site }}">{{ job.company }}</a> · {{ job.from }} - {{ job.to }}<br />
+        <code>{{ job.technologies | array_to_sentence_string }}</code>
+      </p>
+    </li>
+  {% endfor %}
 </ul>
 
 <h3>

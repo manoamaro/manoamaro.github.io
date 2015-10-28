@@ -1,0 +1,6 @@
+{% if !site.posts != empty %}
+  <h3>Latest Posts <small>(<a href="/posts.html">See all</a>)</small></h3>
+  {% for post in site.posts limit:5 %}
+    <a href="{{ post.url }}">{{ post.title }}</a><br />
+  {% endfor %}
+{% endif %}
