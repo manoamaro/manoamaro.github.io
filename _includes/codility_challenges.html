@@ -1,0 +1,7 @@
+<ul>
+  {% for chl in site.data.codility_challenges %}
+    <li>
+      {{ chl.title }} <small>(<a href="{{ chl.challenge_link }}">description</a>)</small> · <a href="{{ chl.solution_link }}">Solution</a>
+    </li>
+  {% endfor %}
+</ul>

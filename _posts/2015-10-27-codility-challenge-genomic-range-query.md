@@ -127,3 +127,6 @@ return result
 {% endhighlight %}
 
 With this algorithm, the complexity drops from `O(m*4*n)` to `O(4*n + 4*m)`. Ruling out the constants, `O(n + m)` matches the challenge's expected complexity.
+
+Checkout some of my solutions for other challenges:
+{% include codility_challenges.html %}
