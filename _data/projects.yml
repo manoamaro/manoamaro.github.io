@@ -1,0 +1,25 @@
+- title: Washington Espinola's website
+  img: ''
+  url: http://www.wespinola.com
+  technologies:
+    - Ruby on Rails
+    - MySQL
+    - Refinery CMS
+
+- title: Sidera Inc's website
+  img: ''
+  url: http://www.sideraincorporadora.com.br
+  technologies:
+    - Ruby on Rails
+    - PostgreSQL
+    - Custom CMS
+    - Angular JS
+
+- title: Pechincha do Dia website
+  img: ''
+  url: http://www.sideraincorporadora.com.br
+  technologies:
+    - Ruby on Rails
+    - PostgreSQL
+    - Custom CMS
+    - Angular JS

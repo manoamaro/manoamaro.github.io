@@ -4,6 +4,6 @@ layout: main
 
 <h2>{{ page.title }}</h2>
 <small>{{ page.date | date_to_long_string }}</small>
-<small class="pull-right">{{ page.tags.join(',') }}</small>
+<small class="pull-right">{{ page.tags | array_to_sentence_string }}</small>
 <hr />
 <div class='post-content'>{{ content }}</div>
