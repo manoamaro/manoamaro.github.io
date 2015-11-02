@@ -22,3 +22,14 @@
     - JavaScript
     - CSS
     - HTML
+
+- company: LAViD (Audio and Video Applications Lab)
+  company_site: http://lavid.ufpb.br/
+  title: Researcher
+  from: 2011
+  to: 2013
+  technologies:
+    - Java
+    - Linked Data
+    - Semantic Web
+    - Computational Agents
