@@ -5,7 +5,8 @@ published_at: 22/10/2015
 tags:
   - codility
   - challenge
-  - programming
+  - genomicRangeQuery
+  - solution
   - ruby
 ---
 
