@@ -6,3 +6,4 @@ gem 'capistrano', '~> 3.4.0'
 gem 'capistrano-rvm'
 gem 'capistrano-bundler'
 gem 'jekyll-sitemap'
+gem 'therubyracer',  platforms: :ruby
