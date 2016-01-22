@@ -1,10 +1,10 @@
-- title: Washington Espinola's website
+- title: Dicore Interiores' website
   img: ''
-  url: http://www.wespinola.com
+  url: http://www.dicoreinteriores.com.br
   technologies:
     - Ruby on Rails
-    - MySQL
-    - Refinery CMS
+    - PostgreSQL
+    - Custom CMS
 
 - title: Sidera Inc's website
   img: ''
@@ -14,6 +14,14 @@
     - PostgreSQL
     - Custom CMS
     - Angular JS
+
+- title: Washington Espinola's website
+  img: ''
+  url: http://www.wespinola.com
+  technologies:
+    - Ruby on Rails
+    - MySQL
+    - Refinery CMS
 
 - title: Pechincha do Dia website
   img: ''
