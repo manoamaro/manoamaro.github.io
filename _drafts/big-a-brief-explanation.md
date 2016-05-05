@@ -71,9 +71,17 @@ The *Time Complexity* of this function is **O(N)**, because this function will r
 
 This algorithm runs 2 nested *fors*, one inside the other. So, for every item in the array, the algorithm will run N times, for N = size of array. This will result in a time complexity of **O(N*N)**, or **O(N^2)**. If there were another nested *for*, the Big-O would be *O(N^3)*.
 
-But, when the algorithm has 2 or more *fors*, but they are not nested, the time will not be exponential. For example:
+But, when the algorithm has 2 or more *fors*, but they are not nested, the time will not be exponential. For example, the 
 
 {% highlight ruby %}
+
+  def prefix_sum(array)
+    result = Array.new array.size + 1, 0
+    for i in (1..array.size)
+      result[i] = result[i - 1] + array[i - 1]
+    end
+    result
+  end
 
 {% endhighlight %}
 
@@ -83,6 +91,5 @@ But, when the algorithm has 2 or more *fors*, but they are not nested, the time 
 
 
 #### References
-
-- Book Cracking the Coding Interview, 6th Edition, Gayle Laakmann McDowell.
-- Book Cracking the Coding Interview, 6th Edition, Gayle Laakmann McDowell.
+- [Book Cracking the Coding Interview 6th Edition, Gayle Laakmann McDowell.](http://www.amazon.com/gp/product/0984782850)
+- [Book Introduction to the Theory of Computation 3rd Edition, Michael Sipser.](http://www.amazon.com/Introduction-Theory-Computation-Michael-Sipser/dp/113318779X)
