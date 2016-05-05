@@ -1,9 +1,6 @@
 source 'https://rubygems.org'
 
 gem 'jekyll'
-gem 'rouge'
-gem 'capistrano', '~> 3.4.0'
-gem 'capistrano-rvm'
-gem 'capistrano-bundler'
 gem 'jekyll-sitemap'
+gem 'jekyll-coffeescript'
 gem 'therubyracer',  platforms: :ruby
