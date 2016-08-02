@@ -60,7 +60,7 @@ layout: main
     <li>
       <p>
         {{ prj.title }}{% if prj.url %} - <a href="{{ prj.url }}">website</a>{% endif %}<br />
-        {% if prj.desc %}<span>{{ prj.desc }}</span><br />{% end %}
+        {% if prj.desc %}<span>{{ prj.desc }}</span><br />{% endif %}
         <code>{{ prj.technologies | array_to_sentence_string }}</code>
       </p>
     </li>
