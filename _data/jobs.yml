@@ -3,6 +3,7 @@
   title: Software Engineer
   from: 2013
   to: present
+  desc: Development of transactional systems for mobile devices (Android) and financial POSs, and the management system that controls all transactional servers.
   technologies:
     - Mobile Development (Android)
     - Java / Spring Framework
@@ -16,6 +17,7 @@
   title: Software Developer
   from: 2012
   to: 2013
+  desc: Migration from Java to Ruby on Rails and development of a coupon and discount website (Groupon like).
   technologies:
     - Ruby on Rails
     - Java
@@ -29,6 +31,7 @@
   title: Researcher
   from: 2011
   to: 2013
+  desc: Worked in a academic project called Knowledge-TV, which aims to provide Semantic Enrichment and Recommendation to Brazilian Digital TV through Semantic Web and Linked Data.
   technologies:
     - Java
     - Linked Data
