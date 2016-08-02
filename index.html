@@ -59,7 +59,7 @@ layout: main
   {% for prj in site.data.projects %}
     <li>
       <p>
-        {{ prj.title }} - <a href="{{ prj.url }}">website</a><br />
+        {{ prj.title }}{% if prj.url %} - <a href="{{ prj.url }}">website</a>{% endif %}<br />
         <code>{{ prj.desc }}</code><br />
         <code>{{ prj.technologies | array_to_sentence_string }}</code>
       </p>
