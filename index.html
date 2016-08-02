@@ -24,6 +24,7 @@ layout: main
     <li>
       <p>
         {{ job.title }} at <a href="{{ job.company_site }}">{{ job.company }}</a> · {{ job.from }} - {{ job.to }}<br />
+        <code>{{ job.desc }}</code><br />
         <code>{{ job.technologies | array_to_sentence_string }}</code>
       </p>
     </li>
@@ -59,6 +60,7 @@ layout: main
     <li>
       <p>
         {{ prj.title }} - <a href="{{ prj.url }}">website</a><br />
+        <code>{{ prj.desc }}</code><br />
         <code>{{ prj.technologies | array_to_sentence_string }}</code>
       </p>
     </li>
