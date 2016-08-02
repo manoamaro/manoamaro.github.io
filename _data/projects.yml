@@ -1,7 +1,6 @@
 - title: Exams Manager for Unimed JP
   desc: Management system for doctors, pacients and laboratories to store exam results.
   img: ''
-  url: ''
   technologies:
     - Ruby on Rails
     - PostgreSQL
@@ -33,7 +32,6 @@
 
 - title: Pechincha do Dia website
   img: ''
-  url: '#'
   technologies:
     - Ruby on Rails
     - PostgreSQL
