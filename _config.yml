@@ -1,5 +1,14 @@
+---
+title: Manoamaro.Github.Io
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 url: http://www.manoamaro.com.br
-#url: http://localhost:4000
 gems:
-  - jekyll-sitemap
-  - jekyll-coffeescript
+- jekyll-sitemap
+- jekyll-coffeescript

@@ -1,12 +1,13 @@
 ---
-layout: post
-title: 'Rails and Angujar JS'
+title: Rails and Angujar JS
+date: 2016-08-02 02:50:28.053000000 Z
 tags:
-  - ruby
-  - rails
-  - angular js
-  - javascript
-  - frontend
+- ruby
+- rails
+- angular js
+- javascript
+- frontend
+layout: post
 ---
 
 When I saw Angular JS for the first time, I ran to integrate into my Rails projects. But then I started to face some challenges. The main challenge was how I could integrate the Angular JS's one page feature with all the Rails views and forms. After a lot of research, I came up with these following solutions.

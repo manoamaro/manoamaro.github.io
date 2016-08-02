@@ -1,13 +1,14 @@
 ---
-layout: post
-title: 'Big O - A brief explanation'
+title: Big O - A brief explanation
+date: 2016-08-02 02:50:28.011000000 Z
 tags:
-  - computer science
-  - big o
-  - time
-  - space
-  - algorithms
-  - complexity
+- computer science
+- big o
+- time
+- space
+- algorithms
+- complexity
+layout: post
 ---
 
 One of the most important concept that I saw in all coding challenges (and some companies use theses challenges for hiring) is the **Big-O**. Basically, it's used to estimate the complexity of an algorithm, "calculating" an approximated time and space that this algorithm will need to finish it's job, based on the size of the input. In this post I'm going to explain the concepts of Big-O and some examples of how to "calculate" it.
