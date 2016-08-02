@@ -2,18 +2,18 @@
   img: ''
   url: http://www.dicoreinteriores.com.br
   technologies:
+    - Wordpress (Blog and pages)
     - Ruby on Rails
     - PostgreSQL
-    - Custom CMS
 
 - title: Sidera Inc's website
   img: ''
   url: http://www.sideraincorporadora.com.br
   technologies:
     - Ruby on Rails
+    - Angular JS
     - PostgreSQL
     - Custom CMS
-    - Angular JS
 
 - title: Washington Espinola's website
   img: ''
@@ -25,7 +25,7 @@
 
 - title: Pechincha do Dia website
   img: ''
-  url: http://www.sideraincorporadora.com.br
+  url: '#'
   technologies:
     - Ruby on Rails
     - PostgreSQL
