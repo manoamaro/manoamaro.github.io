@@ -1,8 +1,18 @@
+- company: Channel (H) inc.
+  company_site: http://www.channelh.co
+  title: Software Engineer
+  from: 2016
+  to: present
+  desc: Development of US healthcare related technologies.
+  technologies:
+    - Ruby on Rails
+    - PostgreSQL
+
 - company: Phoebus Tecnologia
   company_site: http://www.phoebus.com.br
   title: Software Engineer
   from: 2013
-  to: present
+  to: 2016
   desc: Development of transactional systems for mobile devices (Android) and financial POSs, and the management system that controls all transactional servers.
   technologies:
     - Mobile Development (Android)
