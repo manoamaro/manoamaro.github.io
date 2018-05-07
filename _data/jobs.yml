@@ -1,0 +1,39 @@
+- company: Phoebus Tecnologia
+  company_site: http://www.phoebus.com.br
+  title: Software Engineer
+  from: 2013
+  to: present
+  desc: Development of transactional systems for mobile devices (Android) and financial POSs, and the management system that controls all transactional servers.
+  technologies:
+    - Mobile Development (Android)
+    - Java / Spring Framework
+    - Angular JS
+    - Flex
+    - WMLS
+    - Oracle Database
+
+- company: Inovecinco
+  company_site: http://www.inovecinco.com
+  title: Software Developer
+  from: 2012
+  to: 2013
+  desc: Migration from Java to Ruby on Rails and development of a coupon and discount website (Groupon like).
+  technologies:
+    - Ruby on Rails
+    - Java
+    - PostgreSQL
+    - JavaScript
+    - CSS
+    - HTML
+
+- company: LAViD (Audio and Video Applications Lab)
+  company_site: http://lavid.ufpb.br/
+  title: Researcher
+  from: 2011
+  to: 2013
+  desc: Worked in a academic project called Knowledge-TV, which aims to provide Semantic Enrichment and Recommendation to Brazilian Digital TV through Semantic Web and Linked Data.
+  technologies:
+    - Java
+    - Linked Data
+    - Semantic Web
+    - Computational Agents

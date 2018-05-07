@@ -1,0 +1,38 @@
+- title: Exams Manager for Unimed JP
+  desc: Management system for doctors, pacients and laboratories to store exam results.
+  img: ''
+  technologies:
+    - Ruby on Rails
+    - PostgreSQL
+
+- title: Dicore Interiores' website
+  img: ''
+  url: http://www.dicoreinteriores.com.br
+  technologies:
+    - Wordpress (Blog and pages)
+    - Ruby on Rails
+    - PostgreSQL
+
+- title: Sidera Inc's website
+  img: ''
+  url: http://www.sideraincorporadora.com.br
+  technologies:
+    - Ruby on Rails
+    - Angular JS
+    - PostgreSQL
+    - Custom CMS
+
+- title: Washington Espinola's website
+  img: ''
+  url: http://www.wespinola.com
+  technologies:
+    - Ruby on Rails
+    - MySQL
+    - Refinery CMS
+
+- title: Pechincha do Dia website
+  img: ''
+  technologies:
+    - Ruby on Rails
+    - PostgreSQL
+    - Custom CMS
