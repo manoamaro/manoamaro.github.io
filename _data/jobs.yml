@@ -1,7 +1,7 @@
 - company: Journi GmbH.
   company_site: https://www.journiapp.com/
   title: Software Engineer
-  from: 2016
+  from: 2017
   to: present
   desc: Android and Backend developer
   technologies:
@@ -14,7 +14,7 @@
   company_site: http://www.channelh.co
   title: Software Engineer
   from: 2016
-  to: present
+  to: 2017
   desc: Development of US healthcare related technologies.
   technologies:
     - Ruby on Rails
