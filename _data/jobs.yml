@@ -1,3 +1,15 @@
+- company: Journi GmbH.
+  company_site: https://www.journiapp.com/
+  title: Software Engineer
+  from: 2016
+  to: present
+  desc: Android and Backend developer
+  technologies:
+    - Android (Java and Kotlin)
+    - Scala
+    - ReactJS
+    - PostgreSQL
+
 - company: Channel (H) inc.
   company_site: http://www.channelh.co
   title: Software Engineer
