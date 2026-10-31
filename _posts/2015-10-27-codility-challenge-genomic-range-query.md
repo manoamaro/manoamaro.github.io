@@ -13,7 +13,7 @@ layout: post
 published_at: 22/10/2015
 ---
 
-This challenge is in the list of the toughest challenges for me. I wrote a code that got 100% on tests, but with a more detailed analysis, I believe it's not the expected answer.
+This was one of the toughest challenges for me. My first solution passed all the tests, but after analysing it more closely, I realised it probably wasn't the intended approach.
 
 {% highlight ruby %}
 def solution(s, p, q)
@@ -39,7 +39,7 @@ end
 
 The original Codility result link is no longer available. The [Genomic Range Query challenge](https://app.codility.com/programmers/lessons/5-prefix_sums/genomic_range_query/) is still available.
 
-In this solution, I didn't use what I think the lesson expected us to use (prefix sum technique). And calculating the complexity it will give us O(m*4*n). So, I started to try to find a solution using prefix sum, but I couldn't find anything by my own. Then I searched for some existing solutions, and after analyzing a lot of different ones, I came up with this implementation.
+My first solution didn't use the prefix-sum technique that I think the lesson was teaching. Its time complexity is O(4 × M × N), where N is the string length and M is the number of queries. I tried to find a prefix-sum solution on my own, but couldn't work one out. After researching and analysing several existing solutions, I came up with this implementation.
 
 {% highlight ruby %}
 def solution(s, p, q)
@@ -75,7 +75,7 @@ def solution(s, p, q)
 end
 {% endhighlight %}
 
-Now a brief explanation about this algorithm. The first part is the prefix sum calculation of the values. But instead of keeping an array of prefix sums, it creates a hash and store an array of sums for each letter.
+Now a brief explanation about this algorithm. The first part calculates prefix sums. Instead of keeping a separate variable for each letter, it creates a hash that stores an array of sums for each nucleotide.
 
 {% highlight ruby %}
 def solution(s, p, q)
@@ -97,7 +97,7 @@ def solution(s, p, q)
   end
 {% endhighlight %}
 
-The hash is created with an block that is called everytime an empty index is accessed, creating a new array with predefined size and initial value of zero. After that, for each nucleotide in the hash, an array of prefix sums is created for each letter. Using the string of the example (CAGCCTA), the hash of prefix sums will be like this:
+The hash is created with a block that is called whenever a missing key is accessed. It creates an array of the required size, initialized to zero. After that, for each nucleotide in the hash, an array of prefix sums is created for each letter. Using the string of the example (CAGCCTA), the hash of prefix sums will be like this:
 
 {% highlight ruby %}
 
@@ -110,9 +110,9 @@ The hash is created with an block that is called everytime an empty index is acc
 
 {% endhighlight %}
 
-As you can see, when there is a difference between two values in an array, there is a letter in there. For example, in the position 2 (0 index based) there is a letter "G", because `prefix_sums["G"][2 + 1] != prefix_sums["G"][2]`. Now it's less complex to find an letter in a given position.
+As you can see, when there is a difference between two values in an array, there is a letter in there. For example, in the position 2 (0 index based) there is a letter "G", because `prefix_sums["G"][2 + 1] != prefix_sums["G"][2]`. Now it's easier to check whether a given range contains a nucleotide.
 
-The rest of the algorithm builds the result iterating over the `p` and `q` (`p.size == q.size`). For each nucleotide, verify if in the given range from `p` and `q` there is a letter, from the lowest factor ("A") to the highest factor ("T"). If a letter is found (as explained before, if there is a difference between the prefix sums array in given indexes), simply push this result to the `result` array and go to the next range.
+The rest of the algorithm builds the result iterating over the `p` and `q` (`p.size == q.size`). For each query, the algorithm checks the nucleotides in order of impact factor, from the lowest (`A`) to the highest (`T`), to find the first one present in the range. If a letter is found (as explained before, if there is a difference between the prefix sums array in given indexes), simply push this result to the `result` array and go to the next range.
 
 {% highlight ruby %}
 
@@ -130,7 +130,7 @@ end
 return result
 {% endhighlight %}
 
-With this algorithm, the complexity drops from `O(m*4*n)` to `O(4*n + 4*m)`. Ruling out the constants, `O(n + m)` matches the challenge's expected complexity.
+This reduces the time complexity from O(4 × M × N) to O(4 × N + 4 × M). Ignoring constant factors, that is O(N + M), which matches the expected complexity.
 
 Other Codility challenges (the original shared solution links are no longer available):
 {% include codility_challenges.html %}

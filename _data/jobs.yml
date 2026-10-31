@@ -2,7 +2,7 @@
   title: Software Engineer / Tech Lead
   from: 2022
   to: present
-  desc: Led the backend team as Tech Lead, driving architecture and engineering standards; built microservices with Java, Kotlin, and Spring Boot; managed data in Elasticsearch and PostgreSQL; delivered event-driven pipelines with Kafka; and oversaw DevOps on Docker, Kubernetes, and AWS.
+  desc: Lead the backend team, shaping architecture and engineering standards. Build microservices with Java, Kotlin, and Spring Boot; manage data in Elasticsearch and PostgreSQL; develop event-driven pipelines with Kafka; and oversee DevOps across Docker, Kubernetes, and AWS.
   technologies:
     - Java
     - Kotlin
@@ -20,7 +20,7 @@
   title: Software Engineer
   from: 2017
   to: 2022
-  desc: Built Android apps in Java and Kotlin; developed backend services in Scala and PostgreSQL; contributed to the frontend with React.js; and handled DevOps on Docker, AWS Elastic Beanstalk, and RDS.
+  desc: Built Android apps with Java and Kotlin and backend services with Scala and PostgreSQL. Contributed to the React.js frontend and managed deployments with Docker, AWS Elastic Beanstalk, and RDS.
   technologies:
     - Android (Java, Kotlin)
     - Scala
@@ -34,7 +34,7 @@
   title: Software Engineer
   from: 2016
   to: 2018
-  desc: Developed Ruby on Rails applications for the US healthcare sector, parsing and normalizing diverse EMR data to deliver clear, summarized health information to patients and clinicians.
+  desc: Developed Ruby on Rails applications for the US healthcare sector, parsing and normalizing data from diverse electronic medical records (EMRs) to present clear summaries to patients and clinicians.
   technologies:
     - Ruby on Rails
     - EMR data integration
@@ -44,7 +44,7 @@
   title: Software Engineer
   from: 2013
   to: 2016
-  desc: Built financial transaction processing services using Java, Flex, and AngularJS; developed Android applications for Point of Sale (POS) systems.
+  desc: Built financial transaction processing services with Java, Flex, and AngularJS, and developed Android applications for point-of-sale (POS) systems.
   technologies:
     - Java
     - Flex
@@ -57,7 +57,7 @@
   title: Researcher
   from: 2010
   to: 2013
-  desc: Researched the Knowledge TV project, developing web services and computational agents for a Semantic Query service using Linked Data and Semantic Web principles.
+  desc: Worked on the Knowledge TV research project, developing web services and computational agents for a semantic query service based on Linked Data and Semantic Web principles.
   technologies:
     - Web services
     - Computational agents
