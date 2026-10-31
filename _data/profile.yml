@@ -1,0 +1,30 @@
+headline: Software Engineer / Tech Lead
+location: Vienna, Austria
+focus: Backend engineering and technical leadership.
+skills:
+  - level: Good level
+    items:
+      - Java
+      - Kotlin
+      - Spring Boot
+      - Kafka
+      - Microservices
+      - Elasticsearch
+      - PostgreSQL
+      - Android (Java, Kotlin)
+      - Go
+      - Git
+      - DevOps (Linux, Docker, AWS, Kubernetes)
+  - level: Intermediate
+    items:
+      - Ruby on Rails
+      - Scala
+      - Python
+      - Frontend (React.js)
+languages:
+  - name: Portuguese
+    level: Native speaker
+  - name: English
+    level: Fluent
+  - name: German
+    level: B1

@@ -85,7 +85,7 @@ end
     errors << "#{name}: #{e.message}"
   end
 end
-%w[Gemfile Gemfile.lock README.md AGENTS.md scripts vendor .github _drafts params.json manoamaro.conf].each do |name|
+%w[Gemfile Gemfile.lock README.md AGENTS.md design-qa.md scripts vendor .github _drafts params.json manoamaro.conf].each do |name|
   errors << "Private build/source file published: #{name}" if root.join(name).exist?
 end
 Dir['google*.html'].each do |source|

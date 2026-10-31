@@ -1,20 +1,13 @@
-- school: Instituto Federal de Edu. Ciências e Tecnologia da Paraíba
-  school_site: https://estudante.ifpb.edu.br/cursos/39/
-  location: PB, Brazil
-  title: Technologist in Internet Systems
-  from: 2008
-  to: 2011
-
-- school: Universidade Federal da Paraíba
+- school: Universidade Federal da Paraíba (UFPB)
   school_site: https://www.ci.ufpb.br/pos/
-  location: PB, Brazil
+  location: Brazil
   title: M.Sc. in Computer Science
   from: 2011
-  to: 2013
+  to: 2014
 
-- school: Faculdade Idez/Estácio
-  school_site: https://estacio.br/a-estacio/unidades
-  location: PB, Brazil
-  title: Specialist in Mobile Devices Development
-  from: 2011
-  to: 2013
+- school: Instituto Federal da Paraíba (IFPB)
+  school_site: https://estudante.ifpb.edu.br/cursos/39/
+  location: Brazil
+  title: Technology Degree in Systems Development Technologies
+  from: 2008
+  to: 2011

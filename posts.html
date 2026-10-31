@@ -1,14 +1,14 @@
 ---
-title: Posts
+title: Notes
 description: Notes on software development, algorithms, and projects by Manoel Amaro.
 ---
 <p class="eyebrow">Writing</p>
-<h1>Posts</h1>
+<h1>Notes<span class="accent">.</span></h1>
 {% for post in site.posts %}
 <article class="post-summary">
   <p class="post-meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_long_string }}</time></p>
   <h2><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
-  {{ post.excerpt }}
+  <p>{{ post.description | default: post.excerpt | strip_html | strip_newlines | escape }}</p>
 </article>
 {% else %}
 <p>No posts yet.</p>

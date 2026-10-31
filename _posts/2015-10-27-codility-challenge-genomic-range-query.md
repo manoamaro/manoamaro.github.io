@@ -1,5 +1,7 @@
 ---
 title: 'Codility Challenge: Genomic Range Query'
+description: A solution to the Genomic Range Query problem, covering how DNA prefix sums can be used to answer multiple queries efficiently.
+category_label: Algorithms
 date: 2015-10-27 00:00:00 Z
 tags:
 - codility

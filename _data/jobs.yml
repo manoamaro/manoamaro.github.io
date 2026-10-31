@@ -1,59 +1,65 @@
+- company: Erste Digital GmbH.
+  title: Software Engineer / Tech Lead
+  from: 2022
+  to: present
+  desc: Led the backend team as Tech Lead, driving architecture and engineering standards; built microservices with Java, Kotlin, and Spring Boot; managed data in Elasticsearch and PostgreSQL; delivered event-driven pipelines with Kafka; and oversaw DevOps on Docker, Kubernetes, and AWS.
+  technologies:
+    - Java
+    - Kotlin
+    - Spring Boot
+    - Microservices
+    - Elasticsearch
+    - PostgreSQL
+    - Kafka
+    - Docker
+    - Kubernetes
+    - AWS
+
 - company: Journi GmbH.
   company_site: https://www.journiapp.com/
   title: Software Engineer
   from: 2017
-  to: present
-  desc: Android and Backend developer
+  to: 2022
+  desc: Built Android apps in Java and Kotlin; developed backend services in Scala and PostgreSQL; contributed to the frontend with React.js; and handled DevOps on Docker, AWS Elastic Beanstalk, and RDS.
   technologies:
-    - Android (Java and Kotlin)
+    - Android (Java, Kotlin)
     - Scala
-    - ReactJS
     - PostgreSQL
+    - React.js
+    - Docker
+    - AWS Elastic Beanstalk
+    - AWS RDS
 
-- company: Channel (H) inc.
+- company: Channel (H) Inc.
   title: Software Engineer
   from: 2016
-  to: 2017
-  desc: Development of US healthcare related technologies.
+  to: 2018
+  desc: Developed Ruby on Rails applications for the US healthcare sector, parsing and normalizing diverse EMR data to deliver clear, summarized health information to patients and clinicians.
   technologies:
     - Ruby on Rails
-    - PostgreSQL
+    - EMR data integration
 
 - company: Phoebus Tecnologia
   company_site: https://www.phoebus.com.br
   title: Software Engineer
   from: 2013
   to: 2016
-  desc: Development of transactional systems for mobile devices (Android) and financial POSs, and the management system that controls all transactional servers.
+  desc: Built financial transaction processing services using Java, Flex, and AngularJS; developed Android applications for Point of Sale (POS) systems.
   technologies:
-    - Mobile Development (Android)
-    - Java / Spring Framework
-    - Angular JS
-    - Flex
-    - WMLS
-    - Oracle Database
-
-- company: Inovecinco
-  title: Software Developer
-  from: 2012
-  to: 2013
-  desc: Migration from Java to Ruby on Rails and development of a coupon and discount website (Groupon like).
-  technologies:
-    - Ruby on Rails
     - Java
-    - PostgreSQL
-    - JavaScript
-    - CSS
-    - HTML
+    - Flex
+    - AngularJS
+    - Android
+    - POS systems
 
-- company: LAViD (Audio and Video Applications Lab)
+- company: LAViD — Advanced Audio and Video Laboratory
   company_site: https://www.ci.ufpb.br/lavid/
   title: Researcher
-  from: 2011
+  from: 2010
   to: 2013
-  desc: Worked on an academic project called Knowledge-TV, which aimed to provide semantic enrichment and recommendations for Brazilian Digital TV through Semantic Web and Linked Data.
+  desc: Researched the Knowledge TV project, developing web services and computational agents for a Semantic Query service using Linked Data and Semantic Web principles.
   technologies:
-    - Java
+    - Web services
+    - Computational agents
     - Linked Data
     - Semantic Web
-    - Computational Agents

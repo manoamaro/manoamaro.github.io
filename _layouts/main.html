@@ -3,31 +3,30 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0f151c">
     {% seo %}
     {% feed_meta %}
     <link rel="icon" href="{{ '/images/favicon.svg' | relative_url }}" type="image/svg+xml">
+    <link rel="preload" href="{{ '/assets/fonts/InterVariable.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
     <link href="{{ '/stylesheets/styles.css' | relative_url }}" rel="stylesheet">
   </head>
   <body>
     <a class="skip-link" href="#content">Skip to content</a>
     <div class="wrapper">
       <header class="site-header">
-        <a class="site-name" href="{{ '/' | relative_url }}">Manoel Amaro</a>
-        <p class="tagline">Software engineer<br>M.Sc. in Computer Science</p>
+        <a class="site-name" href="{{ '/' | relative_url }}" aria-label="Manoel Amaro, home">manoel <span>/</span> amaro</a>
         <nav aria-label="Main navigation">
-          <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>Home</a>
-          {% if site.posts.size > 0 %}
-          <a href="{{ '/posts.html' | relative_url }}"{% if page.url == '/posts.html' %} aria-current="page"{% endif %}>Posts</a>
-          {% endif %}
+          <a href="{{ '/' | relative_url }}#about">About</a>
+          <a href="{{ '/' | relative_url }}#work">Work</a>
+          <a href="{{ '/posts.html' | relative_url }}"{% if page.url == '/posts.html' or page.layout == 'post' %} aria-current="page"{% endif %}>Notes</a>
         </nav>
-        {% include profiles.html %}
-        {% include latest_posts.html %}
       </header>
-      <main id="content" tabindex="-1">
+      <main id="content" tabindex="-1"{% unless page.url == '/' %} class="reading-page"{% endunless %}>
         {{ content }}
       </main>
       <footer class="site-footer">
-        <small>Built with Jekyll. Based on a theme by <a href="https://github.com/orderedlist">orderedlist</a>.</small>
+        <p>Manoel Amaro <span class="footer-separator">/</span> {{ site.data.profile.headline | escape }}</p>
+        {% include profiles.html %}
         <a href="{{ '/feed.xml' | relative_url }}">RSS feed</a>
       </footer>
     </div>
