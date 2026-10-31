@@ -1,51 +1,35 @@
 <!doctype html>
-<html>
+<html lang="{{ page.lang | default: site.lang | escape }}">
   <head>
     <meta charset="utf-8">
-    <meta content="chrome=1" http-equiv="X-UA-Compatible">
-    <title>{{ page.title }} - Manoel de Albuquerque Lira Amaro</title>
-
-    <link href="/stylesheets/styles.css" rel="stylesheet">
-    <link href="/stylesheets/github-light.css" rel="stylesheet">
-    <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">
-    <!--[if lt IE 9]> <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
-    <meta name="description" content="{{ page.title }} - Manoel de Albuquerque Lira Amaro">
-    {% if page.tags.size > 0 %}
-    <meta name="keywords" content="{{ page.tags | join:',' }}">
-    {% endif %}
-    <meta name="author" content="Manoel de Albuquerque Lira Amaro">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% seo %}
+    {% feed_meta %}
+    <link rel="icon" href="{{ '/images/favicon.svg' | relative_url }}" type="image/svg+xml">
+    <link href="{{ '/stylesheets/styles.css' | relative_url }}" rel="stylesheet">
   </head>
   <body>
+    <a class="skip-link" href="#content">Skip to content</a>
     <div class="wrapper">
-      <header>
-        <h1>Manoel A. L. Amaro</h1>
-        <small>Software Engineer, M.Sc in Computer Science</small>
-        <p></p>
-        <p class="view">
-          <a href="/">Home</a><br />
-          {% if site.posts != empty %}
-            <a href="/posts.html">Posts</a>
+      <header class="site-header">
+        <a class="site-name" href="{{ '/' | relative_url }}">Manoel Amaro</a>
+        <p class="tagline">Software engineer<br>M.Sc. in Computer Science</p>
+        <nav aria-label="Main navigation">
+          <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>Home</a>
+          {% if site.posts.size > 0 %}
+          <a href="{{ '/posts.html' | relative_url }}"{% if page.url == '/posts.html' %} aria-current="page"{% endif %}>Posts</a>
           {% endif %}
-        </p>
-        <p class="view">
-          {% include profiles.html %}
-        </p>
+        </nav>
+        {% include profiles.html %}
         {% include latest_posts.html %}
       </header>
-      <section>
+      <main id="content" tabindex="-1">
         {{ content }}
-      </section>
-      <footer>
-        <p>
-          <small>Theme by
-            <a href="https://github.com/orderedlist">orderedlist</a>
-          </small>
-        </p>
+      </main>
+      <footer class="site-footer">
+        <small>Built with Jekyll. Based on a theme by <a href="https://github.com/orderedlist">orderedlist</a>.</small>
+        <a href="{{ '/feed.xml' | relative_url }}">RSS feed</a>
       </footer>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="/javascripts/jquery.unveil.js"></script>
-    <script src="/javascripts/scripts.js"></script>
-    {% include analytics.html %}
   </body>
 </html>

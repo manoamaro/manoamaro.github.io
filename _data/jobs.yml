@@ -11,7 +11,6 @@
     - PostgreSQL
 
 - company: Channel (H) inc.
-  company_site: http://www.channelh.co
   title: Software Engineer
   from: 2016
   to: 2017
@@ -21,7 +20,7 @@
     - PostgreSQL
 
 - company: Phoebus Tecnologia
-  company_site: http://www.phoebus.com.br
+  company_site: https://www.phoebus.com.br
   title: Software Engineer
   from: 2013
   to: 2016
@@ -35,7 +34,6 @@
     - Oracle Database
 
 - company: Inovecinco
-  company_site: http://www.inovecinco.com
   title: Software Developer
   from: 2012
   to: 2013
@@ -49,11 +47,11 @@
     - HTML
 
 - company: LAViD (Audio and Video Applications Lab)
-  company_site: http://lavid.ufpb.br/
+  company_site: https://www.ci.ufpb.br/lavid/
   title: Researcher
   from: 2011
   to: 2013
-  desc: Worked in a academic project called Knowledge-TV, which aims to provide Semantic Enrichment and Recommendation to Brazilian Digital TV through Semantic Web and Linked Data.
+  desc: Worked on an academic project called Knowledge-TV, which aimed to provide semantic enrichment and recommendations for Brazilian Digital TV through Semantic Web and Linked Data.
   technologies:
     - Java
     - Linked Data

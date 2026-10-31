@@ -1,14 +1,40 @@
----
-title: Manoamaro.Github.Io
+title: Manoel Amaro
+tagline: Software engineer
+description: "Software engineer and M.Sc. in Computer Science. Work, projects, and notes by Manoel Amaro."
+author:
+  name: Manoel de Albuquerque Lira Amaro
+url: https://manoamaro.github.io
+baseurl: ""
+lang: en
 timezone: UTC
-collections:
-  posts:
-    title: Posts
-    output: true
-  uploads:
-    title: Uploads
-    output: true
-url: http://www.manoamaro.com.br
+social:
+  name: Manoel Amaro
+  links:
+    - https://github.com/manoamaro
+    - https://www.linkedin.com/in/manoel-al-amaro/
+image: /images/20150811-4503.jpg
 plugins:
-- jekyll-sitemap
-- jekyll-coffeescript
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+feed:
+  path: feed.xml
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: main
+      image: /images/20150811-4503.jpg
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - AGENTS.md
+  - scripts
+  - vendor
+strict_front_matter: true

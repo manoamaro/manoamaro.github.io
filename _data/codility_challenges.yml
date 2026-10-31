@@ -1,19 +1,14 @@
 - title: Binary Gap
-  challenge_link: https://codility.com/programmers/task/binary_gap
-  solution_link: https://codility.com/demo/results/trainingTNQ95E-5AQ/
+  challenge_link: https://app.codility.com/programmers/lessons/1-iterations/binary_gap/
 
 - title: Str Symmetry Point
-  challenge_link: https://codility.com/programmers/task/str_symmetry_point
-  solution_link: https://codility.com/demo/results/training4T9MCQ-UJE/
+  challenge_link: https://app.codility.com/programmers/trainings/4/str_symmetry_point/
 
 - title: Count Div
-  challenge_link: https://codility.com/programmers/task/count_div
-  solution_link: https://codility.com/demo/results/trainingCHGCBM-A2M/
+  challenge_link: https://app.codility.com/programmers/lessons/5-prefix_sums/count_div/
 
 - title: Max Counters
-  challenge_link: https://codility.com/programmers/task/max_counters
-  solution_link: https://codility.com/demo/results/training5UCYBZ-WWM/
+  challenge_link: https://app.codility.com/programmers/lessons/4-counting_elements/max_counters/
 
 - title: Frog Jump
-  challenge_link: https://codility.com/programmers/task/frog_jmp
-  solution_link: https://codility.com/demo/results/trainingMGXV2Z-A9S/
+  challenge_link: https://app.codility.com/programmers/lessons/3-time_complexity/frog_jmp/

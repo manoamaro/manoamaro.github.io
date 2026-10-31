@@ -1,14 +1,15 @@
 ---
 title: Posts
-layout: main
+description: Notes on software development, algorithms, and projects by Manoel Amaro.
 ---
-
+<p class="eyebrow">Writing</p>
 <h1>Posts</h1>
 {% for post in site.posts %}
-  <div>
-    <a href="{{ post.url }}" class="post-title">{{ post.title }}</a>
-    <small>{{ post.date | date_to_long_string }}</small>
-    <small class="pull-right">{{ post.tags | array_to_sentence_string }}</small>
-    <small class="excerpt">{{ post.excerpt }}</small>
-  </div>
+<article class="post-summary">
+  <p class="post-meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_long_string }}</time></p>
+  <h2><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
+  {{ post.excerpt }}
+</article>
+{% else %}
+<p>No posts yet.</p>
 {% endfor %}

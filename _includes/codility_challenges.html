@@ -1,7 +1,5 @@
 <ul>
-  {% for chl in site.data.codility_challenges %}
-    <li>
-      {{ chl.title }} <small>(<a href="{{ chl.challenge_link }}">description</a>)</small> · <a href="{{ chl.solution_link }}">Solution</a>
-    </li>
+  {% for challenge in site.data.codility_challenges %}
+  <li><a href="{{ challenge.challenge_link | escape }}">{{ challenge.title | escape }}</a></li>
   {% endfor %}
 </ul>

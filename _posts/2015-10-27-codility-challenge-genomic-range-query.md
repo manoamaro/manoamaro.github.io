@@ -35,7 +35,7 @@ def solution(s, p, q)
 end
 {% endhighlight %}
 
-You can check the results [here](https://codility.com/demo/results/trainingAZJBGW-NSR)
+The original Codility result link is no longer available. The [Genomic Range Query challenge](https://app.codility.com/programmers/lessons/5-prefix_sums/genomic_range_query/) is still available.
 
 In this solution, I didn't use what I think the lesson expected us to use (prefix sum technique). And calculating the complexity it will give us O(m*4*n). So, I started to try to find a solution using prefix sum, but I couldn't find anything by my own. Then I searched for some existing solutions, and after analyzing a lot of different ones, I came up with this implementation.
 
@@ -130,5 +130,5 @@ return result
 
 With this algorithm, the complexity drops from `O(m*4*n)` to `O(4*n + 4*m)`. Ruling out the constants, `O(n + m)` matches the challenge's expected complexity.
 
-Checkout some of my solutions for other challenges:
+Other Codility challenges (the original shared solution links are no longer available):
 {% include codility_challenges.html %}

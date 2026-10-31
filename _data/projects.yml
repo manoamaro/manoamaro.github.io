@@ -1,5 +1,5 @@
 - title: Exams Manager for Unimed JP
-  desc: Management system for doctors, pacients and laboratories to store exam results.
+  desc: Management system for doctors, patients, and laboratories to store exam results.
   img: ''
   technologies:
     - Ruby on Rails
@@ -7,15 +7,13 @@
 
 - title: Dicore Interiores' website
   img: ''
-  url: http://www.dicoreinteriores.com.br
   technologies:
-    - Wordpress (Blog and pages)
+    - WordPress (Blog and pages)
     - Ruby on Rails
     - PostgreSQL
 
 - title: Sidera Inc's website
   img: ''
-  url: http://www.sideraincorporadora.com.br
   technologies:
     - Ruby on Rails
     - Angular JS
@@ -24,7 +22,6 @@
 
 - title: Washington Espinola's website
   img: ''
-  url: http://www.wespinola.com
   technologies:
     - Ruby on Rails
     - MySQL

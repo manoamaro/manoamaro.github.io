@@ -1,68 +1,50 @@
 ---
 title: Home
-layout: main
 ---
+<p class="eyebrow">About me</p>
+<h1>Hi, I'm Manoel.</h1>
+<p class="intro">I'm a software engineer with a master's degree in Computer Science and experience in mobile and backend development.</p>
+<p>I share notes on software development here. You can find my code on <a href="https://github.com/manoamaro">GitHub</a> and my professional profile on <a href="https://www.linkedin.com/in/manoel-al-amaro/">LinkedIn</a>.</p>
+<img class="hero" src="{{ '/images/20150811-4503.jpg' | relative_url }}" alt="Manoel sitting on a rocky ledge overlooking a desert valley" width="1200" height="675" fetchpriority="high" decoding="async">
 
-<img data-src="/images/20150811-4503.jpg"/>
-
-<h3>
-  <a id="welcome" class="anchor" href="#welcome" aria-hidden="true">
-    <span class="octicon octicon-link"></span>
-  </a>About me.
-</h3>
-
-<p>Hi, I'm Manoel Amaro. I'm a software engineer and M.Sc in Computer Science. Currently living in João Pessoa, PB, Brazil.</p>
-
-<h3>
-  <a id="work" class="anchor" href="#work" aria-hidden="true">
-    <span class="octicon octicon-link"></span>
-  </a>Professional Work.
-</h3>
-
-<ul>
-  {% for job in site.data.jobs %}
+<section aria-labelledby="work">
+  <h2 id="work">Professional experience</h2>
+  <p class="archive-note">Experience recorded through 2019. See <a href="https://www.linkedin.com/in/manoel-al-amaro/">LinkedIn</a> for my current professional profile.</p>
+  <ul class="entries">
+    {% for job in site.data.jobs %}
     <li>
-      <p>
-        {{ job.title }} at <a href="{{ job.company_site }}">{{ job.company }}</a> · {{ job.from }} - {{ job.to }}<br />
-        {% if job.desc %}<em>{{ job.desc }}</em><br />{% endif %}
-        <code>{{ job.technologies | array_to_sentence_string }}</code>
-      </p>
+      <h3>{{ job.title | escape }} at {% if job.company_site %}<a href="{{ job.company_site | escape }}">{{ job.company | escape }}</a>{% else %}{{ job.company | escape }}{% endif %}</h3>
+      <p class="details">{% if job.to == 'present' %}From {{ job.from }} (as recorded in 2019){% else %}{{ job.from }} – {{ job.to }}{% endif %}</p>
+      {% if job.desc %}<p>{{ job.desc | escape }}</p>{% endif %}
+      <p class="technologies">{{ job.technologies | array_to_sentence_string | escape }}</p>
     </li>
-  {% endfor %}
-</ul>
+    {% endfor %}
+  </ul>
+</section>
 
-<h3>
-  <a id="education" class="anchor" href="#education" aria-hidden="true">
-    <span class="octicon octicon-link"></span>
-  </a>Education.
-</h3>
-
-<ul>
-  {% for edu in site.data.education %}
+<section aria-labelledby="education">
+  <h2 id="education">Education</h2>
+  <ul class="entries">
+    {% for edu in site.data.education %}
     <li>
-      <p>
-        {{ edu.title }} · {{ edu.from }} - {{ edu.to }}<br />
-        <a href="{{ edu.school_site }}">{{ edu.school }}</a> ({{ edu.location }})
-      </p>
+      <h3>{{ edu.title | escape }}</h3>
+      <p>{% if edu.school_site %}<a href="{{ edu.school_site | escape }}">{{ edu.school | escape }}</a>{% else %}{{ edu.school | escape }}{% endif %}</p>
+      <p class="details">{{ edu.from }} – {{ edu.to }} · {{ edu.location | escape }}</p>
     </li>
-  {% endfor %}
-</ul>
+    {% endfor %}
+  </ul>
+</section>
 
-
-<h3>
-  <a id="projects" class="anchor" href="#projects" aria-hidden="true">
-    <span class="octicon octicon-link"></span>
-  </a>Projects.
-</h3>
-
-<ul>
-  {% for prj in site.data.projects %}
+<section aria-labelledby="projects">
+  <h2 id="projects">Earlier projects</h2>
+  <p class="archive-note">Selected past work. For recent code, visit <a href="https://github.com/manoamaro?tab=repositories">my GitHub repositories</a>.</p>
+  <ul class="entries">
+    {% for prj in site.data.projects %}
     <li>
-      <p>
-        {{ prj.title }}{% if prj.url %} - <a href="{{ prj.url }}">website</a>{% endif %}<br />
-        {% if prj.desc %}<em>{{ prj.desc }}</em><br />{% endif %}
-        <code>{{ prj.technologies | array_to_sentence_string }}</code>
-      </p>
+      <h3>{{ prj.title | escape }}{% if prj.url %} · <a href="{{ prj.url | escape }}">Website</a>{% endif %}</h3>
+      {% if prj.desc %}<p>{{ prj.desc | escape }}</p>{% endif %}
+      <p class="technologies">{{ prj.technologies | array_to_sentence_string | escape }}</p>
     </li>
-  {% endfor %}
-</ul>
+    {% endfor %}
+  </ul>
+</section>
