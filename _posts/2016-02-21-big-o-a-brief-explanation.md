@@ -2,7 +2,7 @@
 title: Big O - A brief explanation
 description: A practical introduction to Big-O, time and space complexity, and prefix sums using Ruby examples.
 category_label: Algorithms
-date: 2026-10-31 00:00:00 Z
+date: 2016-02-21 00:00:00 Z
 tags:
 - computer science
 - big o
