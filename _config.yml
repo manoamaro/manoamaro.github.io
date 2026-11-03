@@ -36,6 +36,4 @@ exclude:
   - scripts
   - vendor
   - design-qa.md
-  - images/20150811-4503.jpg
-  - images/20150811-4530.jpg
 strict_front_matter: true

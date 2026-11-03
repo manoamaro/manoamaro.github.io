@@ -58,6 +58,15 @@ main:focus { outline: none; }
 .background .details { font-size: .8rem; margin-bottom: 12px; }
 .background .featured-title { margin-bottom: 8px; }
 .background .technologies { margin: 20px 0 24px; color: var(--text); }
+.photography { display: grid; grid-template-columns: minmax(260px, .8fr) minmax(0, 1.4fr); gap: 52px; align-items: center; }
+.photography-copy .featured-title { max-width: 18ch; }
+.photography-copy .summary { margin-bottom: 24px; }
+.photography-gallery { display: grid; grid-template-columns: 1.3fr 1fr; grid-template-rows: repeat(2, minmax(0, 1fr)); gap: 12px; align-items: stretch; }
+.photography-image { margin: 0; overflow: hidden; background: var(--surface); }
+.photography-image img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform .4s ease; }
+.photography-image:hover img { transform: scale(1.03); }
+.photography-image-featured { grid-row: span 2; min-height: 360px; }
+.photography-image-secondary, .photography-image-tertiary { min-height: 170px; }
 .section { padding: 40px 0; border-bottom: 1px solid var(--line); }
 .section-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 24px; margin-bottom: 14px; }
 .section-heading .eyebrow { margin-bottom: 0; }
@@ -117,6 +126,7 @@ th, td { padding: .5rem .75rem; border-bottom: 1px solid var(--line); text-align
   .wrapper { padding: 0 32px; }
   .overview { gap: 32px; grid-template-columns: 1.2fr 1fr; }
   .background { padding-left: 32px; }
+  .photography { gap: 32px; }
   .project-list li { grid-template-columns: 24px minmax(0, 1fr); }
   .project-description { grid-column: 2; padding-left: 28px; }
 }
@@ -134,6 +144,12 @@ th, td { padding: .5rem .75rem; border-bottom: 1px solid var(--line); text-align
   .overview { display: block; padding: 32px 0; }
   .featured-title { font-size: 1.4rem; }
   .background { margin-top: 32px; padding: 32px 0 0; border-left: 0; border-top: 1px solid var(--line); }
+  .photography { display: block; }
+  .photography-copy { margin-bottom: 32px; }
+  .photography-copy .featured-title { max-width: 24ch; }
+  .photography-gallery { gap: 8px; }
+  .photography-image-featured { min-height: 0; }
+  .photography-image-secondary, .photography-image-tertiary { min-height: 0; aspect-ratio: 16 / 9; }
   .section { padding: 32px 0; }
   .section-heading { display: block; }
   .section-heading .text-link { margin-top: 8px; }
